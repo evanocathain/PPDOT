@@ -1,0 +1,6 @@
+01/06/2010
+
+I removed any remaining magnetars and the 2 highest Pdot XDINSs by
+hand from all_psrcat as psrcat had some incorrect values for some
+sources and they were not over-plotting correctly!
+

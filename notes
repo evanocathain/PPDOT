@@ -1,0 +1,116 @@
+   128	14:24	cp xdins xdins_all
+   129	14:25	mv xdins xdins_confirmed
+   130	14:25	l
+   131	14:25	emacs -nw xdins_confirmed
+   132	14:26	gcc ppdot.c -o ppdot
+   133	14:26	cd ..
+   134	14:26	gcc ppdot.c -o ppdot
+   135	14:26	./ppdot -m -x -r
+   136	14:26	./ppdot -x -r -x
+   137	14:26	./ppdot -x -r -m
+   138	14:26	./ppdot -x -r -m
+   139	14:26	./ppdot -r -m -x
+   140	14:27	./ppdot
+   141	14:27	./ppdot
+   142	14:28	./ppdot -m
+   143	14:28	./ppdot -m -x -r
+   144	14:28	l
+   145	14:29	l lists/
+   146	14:29	gcc ppdot.c -o ppdot
+   147	14:29	./ppdot -m -x -r
+   148	14:31	l
+   149	14:32	emacs -nw TODO
+   150	14:37	cd glitch
+   151	14:38	awk '{print $1}' /psr/glitch/glitch.db
+   152	14:38	awk '{print $1}' /psr/glitch/glitch.db | uniq
+   153	14:38	awk '{print $1}' /psr/glitch/glitch.db | uniq | more
+   154	14:38	cat /psr/glitch/glitch.db | more
+   155	14:38	cat /psr/glitch/glitch.db | more
+   156	14:38	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | more
+   157	14:38	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | wc -l
+   158	14:39	cat /psr/glitch/glitch.db | wc -l
+   159	14:39	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | more
+   160	14:39	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | more
+   161	14:39	man grep
+   162	14:40	man grep
+   163	14:41	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | grep -e 17
+   164	14:41	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | grep -e `psrcat -c "name p0 p1" -o short -nohead -nonumber`
+   165	14:41	`psrcat -c "name p0 p1" -o short -nohead -nonumber`
+   166	14:41	psrcat -c "name p0 p1" -o short -nohead -nonumber
+   167	14:41	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq | grep -e psrcat -c "name p0 p1" -o short -nohead -nonumber
+   168	14:42	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq > temp
+   169	14:42	psrcat -c "name p0 p1" -o short -nohead -nonumber | grep -e temp
+   170	14:42	psrcat -c "name p0 p1" -o short -nohead -nonumber
+   171	14:42	psrcat -c "name p0 p1" -o short -nohead -nonumber | grep -e temp
+   172	14:42	more temp
+   173	14:42	more temp
+   174	14:42	psrcat -c "name p0 p1" -o short -nohead -nonumber
+   175	14:43	psrcat -c "name p0 p1" -o short -nohead -nonumber | sed s/"B"/""/g | sed s/"J"/""/g
+   176	14:43	psrcat -c "name p0 p1" -o short -nohead -nonumber | sed s/"B"/""/g | sed s/"J"/""/g > temp
+   177	14:44	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq |
+   178	14:44	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq
+   179	14:44	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq > glitches
+   180	14:44	grep -e temp glitches
+   181	14:44	l
+   182	14:44	paste glitches temp
+   183	14:44	paste glitches temp | more
+   184	14:49	more /psr/glitch/glitch.db
+   185	14:49	more glitches
+   186	14:50	more temp
+   187	14:50	more glitches
+   188	14:50	grep -e glitches temp
+   189	14:50	grep 0531+21 temp
+   190	14:50	man grep
+   191	14:50	grep -f glitches temp
+   192	14:50	grep -f glitches temp | wc -l
+   193	14:51	wc -l glitches
+   194	14:52	grep -f glitches temp
+   195	14:52	grep -f glitches temp > glitch_test
+   196	14:53	gcc ppdot.c -o ppdot
+   197	14:53	./ppdot -g
+   198	14:54	cp glitch_test lists/glitch_test
+   199	14:54	gcc ppdot.c -o ppdot
+   200	14:54	./ppdot -g
+   201	14:54	gcc ppdot.c -o ppdot
+   202	14:54	./ppdot -g
+   203	15:09	sshh
+   204	15:23	l
+   205	15:23	./ppdot -g -m -x -r
+   206	15:23	awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq > glitches
+   207	15:24	psrcat -c "name p0 p1" -o short -nohead -nonumber | sed s/"B"/""/g | sed s/"J"/""/g > temp
+   208	15:24	grep -f glitches temp > glitch_test
+   209	15:24	wc -l glitch_test
+   210	15:24	wc -l glitches
+   211	15:24	paste glitches glitch_test | more
+   212	15:25	paste glitches glitch_test | awk '{printf "%s\t%s\n",$1,$2}' | more
+   213	15:25	paste glitches glitch_test | awk '{printf "%s\t\t%s\n",$1,$2}' | more
+   214	15:27	man grep
+   215	15:28	grep -f glitches temp -o | wc -l
+   216	15:28	grep 1610-50 temp
+   217	15:32	man grep
+   218	15:32	man grep
+   219	15:32	grep 1610-50 temp -o
+   220	15:33	man grep
+   221	15:33	grep 1610-50 temp -w
+   222	15:34	grep -f glitches temp -w > glitch_test
+   223	15:34	wc -l glitch_test
+   224	15:34	wc -l glitches
+   225	15:34	mv glitch_test lists/glitch_test
+   226	15:34	ppdot -g
+   227	15:35	history 100 > notes
+
+# GLITCHES
+awk 'NR>3{print $1}' /psr/glitch/glitch.db | uniq > glitches
+psrcat -c "name p0 p1" -o short -nohead -nonumber | sed s/"B"/""/g | sed s/"J"/""/g > temp
+grep -f glitches temp > glitch_test
+mv glitch_test lists/glitch_test
+
+# PSRCAT
+psrcat -c "p0 p1" -o short -nonumber -nohead | awk '{if ($1!="*" && $2!="*") print $1,$2}' > lists/psrcat
+
+# BINARIES
+psrcat -c "p0 p1 pb" -o short -nonumber -nohead | awk '{if ($1!="*" && $2!="*" && $3!="*") print $1,$2}' > lists/binaries
+
+# FERMI
+I took the values for the 46 Fermi PSRs given in Table 1 of
+Abdo et al. 2010, ApJS, 187, pp 460-494
