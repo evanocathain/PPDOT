@@ -10,7 +10,7 @@ int get_args(int argc, char** argv, int* psr, int* magnetar, int* xdins, int* bi
 int main ( int argc, char* argv[])
 {
   //  FILE *gnuplot = popen("/usr/bin/gnuplot -persist","w");
-  FILE *gnuplot = popen("/Applications/scisoft/i386/bin/gnuplot -persist","w");
+  FILE *gnuplot = popen("/usr/local/bin/gnuplot -persist","w");
   char path[]="./lists/";
   int check=0;
   int psr,magnetar,xdins,binary,rrat,nuller,fermi,glitch,E,B,T,BQC,death;
